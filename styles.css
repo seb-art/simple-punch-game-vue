@@ -1,0 +1,56 @@
+.title {
+  text-align: center;
+}
+
+@keyframes move-away {
+    0% { transform: scale(1); }         
+    50% { transform: scale(0.9); }   
+    100% { transform: scale(1); } 
+  }
+  
+  #bag.move {
+    animation: move-away 0.3s ease-in-out;
+  }
+  
+  
+#bag {
+  width: 200px;
+  height: 500px;
+  margin: 0 auto;
+  background: url(/img/bag.png) center no-repeat;
+  background-size: 80%;
+}
+#bag.burst {
+  background: url(/img/bag-burst.png) center no-repeat;
+  background-size: 80%;
+}
+
+#bag-health {
+  width: 200px;
+  border: 2px solid #000;
+  margin: 0 auto 20px auto;
+}
+
+#bag-health div {
+  height: 20px;
+  background: crimson;
+}
+
+#controls {
+  display: flex;
+  width: 120px;
+  margin: 0 auto;
+}
+#controls .btn1 {
+  padding: 10px;
+  border-radius: 50px;
+  background: crimson;
+  color: white;
+  margin-right: 5px;
+}
+#controls .btn2 {
+  padding: 10px;
+  border-radius: 50px;
+  color: white;
+  background: crimson;
+}
